@@ -2,15 +2,15 @@
 # NAME : Alageshwari v
 # REG NO :212224240010
 
-# Aim
+## Aim
 
 To perform histogram equalization on grayscale and color images using OpenCV and Matplotlib to improve the contrast and visual clarity of the images.
 
 
 
-# Procedure
+## Procedure
 
-## **Part 1: Histogram Equalization for Grayscale Images**
+### **Part 1: Histogram Equalization for Grayscale Images**
 
 1. **Import Libraries:** Import the necessary libraries (`cv2`, `numpy`, and `matplotlib.pyplot`).
 2. **Load the Image:** Read the input image in grayscale mode (`cv2.IMREAD_GRAYSCALE`).
@@ -19,7 +19,7 @@ To perform histogram equalization on grayscale and color images using OpenCV and
 5. **Apply Equalization:** Enhance the contrast of the grayscale image using OpenCV's histogram equalization function (`cv2.equalizeHist()`).
 6. **Display Equalized Results:** Plot the histogram and display the equalized image to observe the improvement in contrast.
 
-## **Part 2: Histogram Equalization for Color Images**
+### **Part 2: Histogram Equalization for Color Images**
 
 1. **Load Color Image:** Read the input image in color mode (`cv2.IMREAD_COLOR`).
 2. **Convert Color Space:** Convert the image from the BGR color space to the HSV color space using `cv2.cvtColor()`.
@@ -29,12 +29,12 @@ To perform histogram equalization on grayscale and color images using OpenCV and
 * Display both the original color image and the equalized color image side by side using subplots.
 * Plot and compare the histograms of the original and equalized color images.
   
-# Code:
+## Code:
 ```python
 import cv2
 import numpy as np
 import matplotlib.pyplot as plt
-img = cv2.imread('photo.jpg', cv2.IMREAD_GRAYSCALE)
+img = cv2.imread('photo.png', cv2.IMREAD_GRAYSCALE)
 plt.imshow(img, cmap='gray')
 plt.title('Original Image')
 plt.show()
@@ -47,7 +47,7 @@ plt.title('Equalized Histogram')
 plt.imshow(img_eq, cmap='gray')
 plt.title('Original Image')
 plt.show()
-img = cv2.imread('photo.jpg', cv2.IMREAD_COLOR)
+img = cv2.imread('photo.png', cv2.IMREAD_COLOR)
 img_hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
 img_hsv[:,:,2] = cv2.equalizeHist(img_hsv[:, :, 2])
 img_eq = cv2.cvtColor(img_hsv, cv2.COLOR_HSV2BGR)
@@ -61,3 +61,10 @@ plt.figure(figsize = [15,4])
 plt.subplot(121); plt.hist(img.ravel(),256,range = [0, 256]); plt.title('Original Image')
 plt.subplot(122); plt.hist(img_eq.ravel(),256,range = [0, 256]); plt.title('Histogram Equalized')
 ```
+
+## Output:
+
+
+
+
+
