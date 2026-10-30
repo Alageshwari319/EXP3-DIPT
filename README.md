@@ -1,11 +1,10 @@
 # Ex. No: 03 Histogram Processing
-# NAME : Alageshwari v
-# REG NO :212224240010
+# NAME : Alageshwari V
+# REG NO : 212224240010
 
 ## Aim
 
 To perform histogram equalization on grayscale and color images using OpenCV and Matplotlib to improve the contrast and visual clarity of the images.
-
 
 
 ## Procedure
@@ -65,6 +64,15 @@ plt.subplot(122); plt.hist(img_eq.ravel(),256,range = [0, 256]); plt.title('Hist
 ## Output:
 
 
+<img width="457" height="542" alt="image" src="https://github.com/user-attachments/assets/0446cca8-40e9-4b52-85f2-e1f620f121b7" />
+<img width="767" height="551" alt="image" src="https://github.com/user-attachments/assets/3b499ca8-de6e-4a30-b69c-18bc03cb1287" />
+<img width="766" height="572" alt="image" src="https://github.com/user-attachments/assets/d423f60c-fbe6-404c-955b-d83a03257b41" />
+<img width="480" height="547" alt="image" src="https://github.com/user-attachments/assets/b15a3863-64d9-4013-880a-4c894e0ba763" />
+<img width="498" height="543" alt="image" src="https://github.com/user-attachments/assets/86b0ded2-2f77-47c5-8f80-a810fc2c0261" />
+<img width="733" height="546" alt="image" src="https://github.com/user-attachments/assets/3540efc9-0119-4b0f-a2f2-7aa0d6ce1516" />
+<img width="1337" height="475" alt="image" src="https://github.com/user-attachments/assets/3ff4684a-f89a-4011-b6c6-bd968dd29941" />
+<img width="1347" height="440" alt="image" src="https://github.com/user-attachments/assets/e58d7210-9770-4e01-b002-f0c86e68c4ac" />
 
+## Result:
 
-
+Thus, the histogram processing of the given image was successfully performed using OpenCV, and the pixel intensity distribution was displayed and analyzed.
